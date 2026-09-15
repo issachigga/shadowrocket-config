@@ -1,6 +1,6 @@
-# Shadowrocket 共享配置（测试版）
+# Shadowrocket 配置
 
-面向已有可用代理节点的 Shadowrocket 用户。建议使用 2.2.92 或更新版本。不提供节点，不包含订阅、证书、HTTPS 解密或去广告模块。
+面向已有可用代理节点的 Shadowrocket 用户。建议使用 2.2.92 或更新版本。
 
 ## 导入与选择节点
 
