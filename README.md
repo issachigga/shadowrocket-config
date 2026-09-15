@@ -1,5 +1,7 @@
 # Shadowrocket 配置
 
+Android 用户请看 [Clash Meta for Android 测试模板和说明](ANDROID.md)。Android 版必须在本地添加自己的节点/订阅，不能原样下载就代理上网。
+
 面向已有可用代理节点的 Shadowrocket 用户。建议使用 2.2.92 或更新版本。
 
 ## 导入与选择节点
