@@ -1,0 +1,198 @@
+{
+  "rules": [
+    {
+      "name": "本地与局域网",
+      "outbound": "direct",
+      "switch": true,
+      "or": true,
+      "ip_cidr": [
+        "10.0.0.0/8",
+        "172.16.0.0/12",
+        "192.168.0.0/16",
+        "127.0.0.0/8",
+        "169.254.0.0/16",
+        "::1/128",
+        "fc00::/7",
+        "fe80::/10"
+      ],
+      "domain": [
+        "localhost"
+      ],
+      "domain_suffix": [
+        "local",
+        "lan"
+      ]
+    },
+    {
+      "name": "银行与百度",
+      "outbound": "direct",
+      "switch": true,
+      "or": true,
+      "domain_suffix": [
+        "ccb.com",
+        "abchina.com.cn",
+        "psbc.com"
+      ],
+      "domain": [
+        "www.baidu.com"
+      ]
+    },
+    {
+      "name": "苹果服务",
+      "outbound": "direct",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs"
+      ]
+    },
+    {
+      "name": "谷歌服务",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.srs"
+      ]
+    },
+    {
+      "name": "Telegram",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs"
+      ]
+    },
+    {
+      "name": "ChatGPT",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.srs"
+      ]
+    },
+    {
+      "name": "微软服务",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.srs"
+      ]
+    },
+    {
+      "name": "Steam",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/steam.srs"
+      ]
+    },
+    {
+      "name": "TikTok",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.srs"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/youtube.srs"
+      ]
+    },
+    {
+      "name": "Netflix",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs"
+      ]
+    },
+    {
+      "name": "Disney",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/disney.srs"
+      ]
+    },
+    {
+      "name": "Spotify",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs"
+      ]
+    },
+    {
+      "name": "小米服务",
+      "outbound": "direct",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/xiaomi.srs"
+      ]
+    },
+    {
+      "name": "网易云音乐",
+      "outbound": "direct",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netease.srs"
+      ]
+    },
+    {
+      "name": "国内网站",
+      "outbound": "direct",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.srs"
+      ]
+    },
+    {
+      "name": "中国IP",
+      "outbound": "direct",
+      "switch": true,
+      "or": true,
+      "rule_set": [
+        "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs"
+      ]
+    },
+    {
+      "name": "其他与未知目标",
+      "outbound": "currentSelected",
+      "switch": true,
+      "or": true,
+      "domain_regex": [
+        ".*"
+      ],
+      "ip_cidr": [
+        "0.0.0.0/0",
+        "::/0"
+      ]
+    }
+  ]
+}
