@@ -4,7 +4,23 @@
 
 ## 导入与选择节点
 
-配置下载地址（仓库发布后可用）：
+### 一键导入（iPhone / iPad）
+
+[点击导入 Shadowrocket 配置](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket%3A%2F%2Fconfig%2Fadd%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fissachigga%2Fshadowrocket-config%2Fmain%2Fshadowrocket.conf)
+
+先安装 Shadowrocket，建议用 Safari 打开；允许跳转至 Shadowrocket，再按软件提示完成导入。若没有自动跳转，点击跳转页的“一键安装”按钮。导入后检查当前配置是否选中、全局路由是否为“配置”。先备份原配置。
+
+说明：GitHub README 对自定义协议链接有限制，因此按钮经过第三方 LOWERTOP 的公开跳转页，页面可能变化或不可达；不附带节点或凭据，也没有为本仓库添加点击追踪。
+
+不想经过第三方页面，可复制下列完整链接到 Safari 地址栏打开（需手机实测）：
+
+```text
+shadowrocket://config/add/https://raw.githubusercontent.com/issachigga/shadowrocket-config/main/shadowrocket.conf
+```
+
+### 手动导入备用地址
+
+配置下载地址：
 
 https://raw.githubusercontent.com/issachigga/shadowrocket-config/main/shadowrocket.conf
 
@@ -54,3 +70,9 @@ v0.1 仅做静态检查与远程资源可用性检查，**尚未在 iPhone 做 D
 ## 上游规则
 
 [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)、[Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules)。规则通过链接引用，各自遵循上游许可；本项目不复制完整规则库。
+
+## 仓库访问统计（维护者）
+
+[查看 Insights → Traffic](https://github.com/issachigga/shadowrocket-config/graphs/traffic)。有 push 权限的用户可查看最近 14 天仓库访问、独立访客、完整克隆等统计，并非实时更新。[GitHub 官方说明](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository)
+
+这些数据不是一键导入按钮的点击数，也不是配置下载、更新或成功安装人数。当前项目没有部署链接点击统计，维护者看不到具体谁点击了导入按钮。若以后加入统计，应说明数据范围与隐私影响；点击次数与去重访客、成功安装仍是不同指标。
