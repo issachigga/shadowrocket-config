@@ -70,9 +70,3 @@ v0.1 仅做静态检查与远程资源可用性检查，**尚未在 iPhone 做 D
 ## 上游规则
 
 [blackmatrix7/ios_rule_script](https://github.com/blackmatrix7/ios_rule_script)、[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)、[Aethersailor/Custom_OpenClash_Rules](https://github.com/Aethersailor/Custom_OpenClash_Rules)。规则通过链接引用，各自遵循上游许可；本项目不复制完整规则库。
-
-## 仓库访问统计（维护者）
-
-[查看 Insights → Traffic](https://github.com/issachigga/shadowrocket-config/graphs/traffic)。有 push 权限的用户可查看最近 14 天仓库访问、独立访客、完整克隆等统计，并非实时更新。[GitHub 官方说明](https://docs.github.com/en/repositories/viewing-activity-and-data-for-your-repository/viewing-traffic-to-a-repository)
-
-这些数据不是一键导入按钮的点击数，也不是配置下载、更新或成功安装人数。当前项目没有部署链接点击统计，维护者看不到具体谁点击了导入按钮。若以后加入统计，应说明数据范围与隐私影响；点击次数与去重访客、成功安装仍是不同指标。
