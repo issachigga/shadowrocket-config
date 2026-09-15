@@ -1,6 +1,6 @@
 # Shadowrocket 配置
 
-免费 ClashMi（iOS / Android）及 Clash Meta for Android 用户请看 [Clash YAML 模板与使用教程](ANDROID.md)。需在本地加入自己的 Clash 格式节点/订阅，再导入使用；公开模板不含节点。ClashMi 还需检查客户端 DNS/规则覆写和 TUN 设置。
+ClashMi（iOS / Android）及 Clash Meta for Android 用户请看 [Clash YAML 模板与使用教程](ANDROID.md)。需在本地加入自己的 Clash 格式节点/订阅，再导入使用；公开模板不含节点。ClashMi 还需检查客户端 DNS/规则覆写和 TUN 设置。
 
 面向已有可用代理节点的 Shadowrocket 用户。建议使用 2.2.92 或更新版本。
 
