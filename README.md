@@ -1,8 +1,6 @@
 # Shadowrocket 配置
 
-免费 iOS 客户端测试版：[sing-box MT 模板与教程](SING-BOX.md)、[Karing 原生分流与 DNS 教程](KARING.md)。均需自己的节点；Karing 保留首页手动选节点，DNS 须按教程另外设置，不能只导入分流就认定防泄漏。
-
-Android 用户请看 [Clash Meta for Android 测试模板和说明](ANDROID.md)。Android 版必须在本地添加自己的节点/订阅，不能原样下载就代理上网。
+免费 ClashMi（iOS / Android）及 Clash Meta for Android 用户请看 [Clash YAML 模板与使用教程](ANDROID.md)。需在本地加入自己的 Clash 格式节点/订阅，再导入使用；公开模板不含节点。ClashMi 还需检查客户端 DNS/规则覆写和 TUN 设置。
 
 面向已有可用代理节点的 Shadowrocket 用户。建议使用 2.2.92 或更新版本。
 

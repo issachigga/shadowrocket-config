@@ -1,6 +1,6 @@
-# Clash Meta for Android / mihomo - TEST v0.1
+# ClashMi (iOS/Android) / Clash Meta for Android / mihomo - TEST v0.2
 # No real nodes or subscriptions. Add your own LOCAL proxies/provider before use.
-# This file does NOT merge nodes from other Android profiles.
+# This file does NOT merge nodes from other client profiles.
 mixed-port: 7890
 allow-lan: false
 bind-address: 127.0.0.1
@@ -11,7 +11,7 @@ profile:
   store-selected: true
   store-fake-ip: true
 
-# CMFA manages Android VPN/TUN. Do not copy desktop auto-route settings here.
+# Mobile clients manage VPN/TUN. ClashMi: enable TUN separately; keep template DNS/rules.
 dns:
   enable: true
   ipv6: true
